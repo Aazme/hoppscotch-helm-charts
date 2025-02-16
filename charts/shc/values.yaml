@@ -61,15 +61,15 @@ community:
       dataEncryptionKey: "data encryption key with 32 char"
 
     urls:
-      base: "http://frontend.example.com"
-      shortcode: "http://frontend.example.com"
-      admin: "http://admin.example.com"
+      base: "http://hoppscotch.dev.ostk.creativeadvtech.ml"
+      shortcode: "http://hoppscotch.dev.ostk.creativeadvtech.ml"
+      admin: "http://hoppscotch-admin.dev.ostk.creativeadvtech.ml"
       backend:
-        gql: "http://backend.example.com/graphql"
-        ws: "ws://backend.example.com/graphql"
-        api: "http://backend.example.com/v1"
-      redirect: "http://frontend.example.com"
-      whitelistedOrigins: "http://backend.example.com,http://frontend.example.com,http://admin.example.com"
+        gql: "http://hoppscotch-backend.dev.ostk.creativeadvtech.ml/graphql"
+        ws: "ws://hoppscotch-backend.dev.ostk.creativeadvtech.ml/graphql"
+        api: "http://hoppscotch-backend.dev.ostk.creativeadvtech.ml/v1"
+      redirect: "http://hoppscotch.dev.ostk.creativeadvtech.ml"
+      whitelistedOrigins: "http://hoppscotch-backend.dev.ostk.creativeadvtech.ml,http://hoppscotch.dev.ostk.creativeadvtech.ml,http://hoppscotch-admin.dev.ostk.creativeadvtech.ml"
 
     auth:
       allowedProviders: "GOOGLE,MICROSOFT,GITHUB,EMAIL"
@@ -141,9 +141,9 @@ service:
   # Ingress Configuration
   ingress:
     enabled: true
-    mainHost: frontend.example.com
-    adminHost: admin.example.com
-    backendHost: backend.example.com
+    mainHost: hoppscotch.dev.ostk.creativeadvtech.ml
+    adminHost: hoppscotch-admin.dev.ostk.creativeadvtech.ml
+    backendHost: hoppscotch-backend.dev.ostk.creativeadvtech.ml
     className: nginx # nginx, alb, traefik
 
   # TLS Configuration
