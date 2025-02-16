@@ -154,4 +154,4 @@ service:
   # TLS Configuration
   tls:
     enabled: true
-    secretName: hoppscotch-tls
+    secretName: hoppscotch-dev-creative-ml-tls
